@@ -1,0 +1,32 @@
+Q4. Find out how many pass would be required to sort the following array in decreasing order
+using bubble sort
+Input Array {3,5,1,6,0}
+Ans :-
+    Pass 1:
+        Compare 3 and 5, swap since 3 < 5. Array becomes {5,3,1,6,0}.
+        Compare 3 and 1, no swap since 3 > 1. Array remains {5,3,1,6,0}.
+        Compare 1 and 6, swap since 1 < 6. Array becomes {5,3,6,1,0}.
+        Compare 1 and 0, no swap since 1 > 0. Array remains {5,3,6,1,0}.
+    Pass 2:
+        Compare 5 and 3, no swap since 5 > 3. Array remains {5,3,6,1,0}.
+        Compare 3 and 6, swap since 3 < 6. Array becomes {5,6,3,1,0}.
+        Compare 3 and 1, no swap since 3 > 1. Array remains {5,6,3,1,0}.
+        Compare 1 and 0, no swap since 1 > 0. Array remains {5,6,3,1,0}.
+    Pass 3:
+        Compare 5 and 6, swap since 5 < 6. Array becomes {6,5,3,1,0}.
+        Compare 5 and 3, no swap since 5 > 3. Array remains {6,5,3,1,0}.
+        Compare 3 and 1, no swap since 3 > 1. Array remains {6,5,3,1,0}.
+        Compare 1 and 0, no swap since 1 > 0. Array remains {6,5,3,1,0}.
+    Pass 4:
+        No swaps are needed. The array is already sorted in descending order.
+        So, it takes 4 passes to sort the array in descending order using bubble sort.
+
+Q5. Find out the number of iterations to sort the array in descending order using selection sort.
+Input Array {3,5,1,6,0}
+Ans :- 
+    Iteration 1: Find the maximum in the array, which is 6. Swap it with the first element. Array becomes {6,5,1,3,0}.
+    Iteration 2: Find the maximum in the rest of the array, which is 5. Swap it with the second element. Array becomes {6,5,1,3,0}.
+    Iteration 3: Find the maximum in the rest of the array, which is 3. Swap it with the third element. Array becomes {6,5,3,1,0}.
+    Iteration 4: Find the maximum in the rest of the array, which is 1. Swap it with the fourth element. Array becomes {6,5,3,1,0}.
+    Iteration 5: The last element 0 is already in its place. No need for a swap.
+    So, it takes 5 iterations to sort the array in descending order using selection sort.
